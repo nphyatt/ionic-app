@@ -1,0 +1,7 @@
+{
+  "name": "v3app",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
