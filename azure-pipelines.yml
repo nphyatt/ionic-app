@@ -7,11 +7,17 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-16.04'
+
+container:
+  image: 'ionicnick/ionic'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: ionic info
+  displayName: 'Print Ionic Info'
+
+- script: ls
+  displayName: 'ls the dir'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
